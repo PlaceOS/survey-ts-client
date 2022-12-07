@@ -1,13 +1,22 @@
 {
   "name": "survey-ts-client",
   "version": "0.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
   },
+  "scripts": {
+    "start": "tsdx start",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "generate": "openapi-generator-cli generate -i src/schema.yaml -g typescript-axios -o src/lib -c src/config.yaml "
+  },
+  "module": "dist/portal-ts-clients.esm.js",
   "private": true,
   "dependencies": {
     "@angular/animations": "^14.0.0",
@@ -19,7 +28,8 @@
     "@angular/platform-browser-dynamic": "^14.0.0",
     "@angular/router": "^14.0.0",
     "rxjs": "~7.5.0",
-    "tslib": "^2.3.0",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.1",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
