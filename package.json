@@ -1,8 +1,15 @@
 {
-  "name": "survey-ts-client",
+  "name": "@placeos/survey-ts-client",
   "version": "0.0.0",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/placeos"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/placeos/survey-ts-client.git"
+  },
   "files": [
     "dist",
     "src"
@@ -17,7 +24,7 @@
     "generate": "openapi-generator-cli generate -i src/schema.yaml -g typescript-axios -o src/lib -c src/config.yaml "
   },
   "module": "dist/portal-ts-clients.esm.js",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^14.0.0",
     "@angular/common": "^14.0.0",
@@ -44,5 +51,12 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
     "typescript": "~4.7.2"
-  }
+  },
+  "description": "Typescript client for accessing survey-related API",
+  "bugs": {
+    "url": "https://github.com/placeos/survey-ts-client/issues"
+  },
+  "homepage": "https://github.com/placeos/survey-ts-client#readme",
+  "author": "",
+  "license": "ISC"
 }
