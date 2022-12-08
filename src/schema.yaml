@@ -552,3 +552,10 @@ components:
       required:
         - error
         - failures
+  responses: {}
+  headers: {}
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
