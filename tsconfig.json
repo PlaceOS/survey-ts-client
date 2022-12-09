@@ -3,7 +3,7 @@
   "compileOnSave": false,
   "include": ["src", "types"],
   "compilerOptions": {
-    "module": "esnext",
+    "module": "commonjs",
     "lib": ["esnext", "dom"],
     "importHelpers": true,
     "declaration": true,
@@ -15,11 +15,11 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "moduleResolution": "node",
-    "esModuleInterlop": true,
+    "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "experimentalDecorators": true,
-    "target": "es2020"
+    "target": "ESNext"
   }
 }
