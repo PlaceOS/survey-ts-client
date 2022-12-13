@@ -3,9 +3,6 @@
   "version": "0.0.4",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/placeos"
-  },
   "repository": {
     "type": "git",
     "url": "git://github.com/placeos/survey-ts-client.git"
