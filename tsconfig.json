@@ -15,7 +15,7 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "moduleResolution": "node",
-    "esModuleInterlop": true,
+    "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
