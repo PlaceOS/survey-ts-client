@@ -522,18 +522,15 @@ export const InvitationsApiAxiosParamCreator = function (configuration?: Configu
         /**
          * 
          * @summary deletes the invitation
-         * @param {Null} id 
-         * @param {string} token 
+         * @param {string} token the invitation token
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        surveysInvitationsDestroy: async (id: Null, token: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'id' is not null or undefined
-            assertParamExists('surveysInvitationsDestroy', 'id', id)
+        surveysInvitationsDestroy: async (token: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'token' is not null or undefined
             assertParamExists('surveysInvitationsDestroy', 'token', token)
-            const localVarPath = `/api/staff/v1/surveys/invitations/{id}`
-                .replace(`{${"id"}}`, encodeURIComponent(String(id)));
+            const localVarPath = `/api/staff/v1/surveys/invitations/{token}`
+                .replace(`{${"token"}}`, encodeURIComponent(String(token)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -544,10 +541,6 @@ export const InvitationsApiAxiosParamCreator = function (configuration?: Configu
             const localVarRequestOptions = { method: 'DELETE', ...baseOptions, ...options};
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
-
-            if (token !== undefined) {
-                localVarQueryParameter['token'] = token;
-            }
 
 
     
@@ -658,13 +651,12 @@ export const InvitationsApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary deletes the invitation
-         * @param {Null} id 
-         * @param {string} token 
+         * @param {string} token the invitation token
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async surveysInvitationsDestroy(id: Null, token: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.surveysInvitationsDestroy(id, token, options);
+        async surveysInvitationsDestroy(token: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.surveysInvitationsDestroy(token, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -713,13 +705,12 @@ export const InvitationsApiFactory = function (configuration?: Configuration, ba
         /**
          * 
          * @summary deletes the invitation
-         * @param {Null} id 
-         * @param {string} token 
+         * @param {string} token the invitation token
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        surveysInvitationsDestroy(id: Null, token: string, options?: any): AxiosPromise<void> {
-            return localVarFp.surveysInvitationsDestroy(id, token, options).then((request) => request(axios, basePath));
+        surveysInvitationsDestroy(token: string, options?: any): AxiosPromise<void> {
+            return localVarFp.surveysInvitationsDestroy(token, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -767,14 +758,13 @@ export class InvitationsApi extends BaseAPI {
     /**
      * 
      * @summary deletes the invitation
-     * @param {Null} id 
-     * @param {string} token 
+     * @param {string} token the invitation token
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof InvitationsApi
      */
-    public surveysInvitationsDestroy(id: Null, token: string, options?: AxiosRequestConfig) {
-        return InvitationsApiFp(this.configuration).surveysInvitationsDestroy(id, token, options).then((request) => request(this.axios, this.basePath));
+    public surveysInvitationsDestroy(token: string, options?: AxiosRequestConfig) {
+        return InvitationsApiFp(this.configuration).surveysInvitationsDestroy(token, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
