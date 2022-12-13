@@ -1,6 +1,6 @@
 {
   "name": "@placeos/survey-ts-client",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "publishConfig": {
@@ -23,33 +23,14 @@
     "test": "tsdx test",
     "generate": "openapi-generator-cli generate -i src/schema.yaml -g typescript-axios -o src/lib -c src/config.yaml "
   },
-  "module": "dist/portal-ts-clients.esm.js",
+  "module": "dist/survey-ts-clients.esm.js",
   "private": false,
   "dependencies": {
-    "@angular/animations": "^14.0.0",
-    "@angular/common": "^14.0.0",
-    "@angular/compiler": "^14.0.0",
-    "@angular/core": "^14.0.0",
-    "@angular/forms": "^14.0.0",
-    "@angular/platform-browser": "^14.0.0",
-    "@angular/platform-browser-dynamic": "^14.0.0",
-    "@angular/router": "^14.0.0",
-    "rxjs": "~6.6.3",
-    "tsdx": "^0.14.1",
-    "tslib": "^2.4.1",
-    "zone.js": "~0.11.4"
+    "axios": "^1.2.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^14.2.1",
-    "@angular/cli": "~14.2.1",
-    "@angular/compiler-cli": "^14.0.0",
-    "@types/jasmine": "~4.0.0",
-    "jasmine-core": "~4.3.0",
-    "karma": "~6.4.0",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage": "~2.2.0",
-    "karma-jasmine": "~5.1.0",
-    "karma-jasmine-html-reporter": "~2.0.0",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.1",
     "typescript": "~4.7.2"
   },
   "description": "Typescript client for accessing survey-related API",
