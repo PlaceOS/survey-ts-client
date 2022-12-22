@@ -1239,6 +1239,8 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Application__CommonError"
+      security:
+      - bearerAuth: []
 components:
   schemas:
     JSON__Any:
@@ -1407,3 +1409,13 @@ components:
       required:
         - error
         - failures
+  responses: {}
+  headers: {}
+  securitySchemes:
+    BearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  links: {}
+  callbacks: {}
+

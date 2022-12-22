@@ -330,6 +330,9 @@ export const AnswersApiAxiosParamCreator = function (configuration?: Configurati
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication bearerAuth required
+            // http bearer authentication required
+            await setBearerAuthToObject(localVarHeaderParameter, configuration)
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
@@ -368,6 +371,9 @@ export const AnswersApiAxiosParamCreator = function (configuration?: Configurati
                 localVarQueryParameter['survey_id'] = surveyId;
             }
 
+            // authentication bearerAuth required
+            // http bearer authentication required
+            await setBearerAuthToObject(localVarHeaderParameter, configuration)
 
     
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -505,6 +511,9 @@ export const InvitationsApiAxiosParamCreator = function (configuration?: Configu
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication bearerAuth required
+            // http bearer authentication required
+            await setBearerAuthToObject(localVarHeaderParameter, configuration)
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
@@ -542,6 +551,9 @@ export const InvitationsApiAxiosParamCreator = function (configuration?: Configu
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication bearerAuth required
+            // http bearer authentication required
+            await setBearerAuthToObject(localVarHeaderParameter, configuration)
 
     
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -582,6 +594,9 @@ export const InvitationsApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['sent'] = sent;
             }
 
+            // authentication bearerAuth required
+            // http bearer authentication required
+            await setBearerAuthToObject(localVarHeaderParameter, configuration)
 
     
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -616,6 +631,9 @@ export const InvitationsApiAxiosParamCreator = function (configuration?: Configu
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication bearerAuth required
+            // http bearer authentication required
+            await setBearerAuthToObject(localVarHeaderParameter, configuration)
 
     
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -822,6 +840,9 @@ export const QuestionsApiAxiosParamCreator = function (configuration?: Configura
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication bearerAuth required
+            // http bearer authentication required
+            await setBearerAuthToObject(localVarHeaderParameter, configuration)
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
@@ -859,6 +880,9 @@ export const QuestionsApiAxiosParamCreator = function (configuration?: Configura
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication bearerAuth required
+            // http bearer authentication required
+            await setBearerAuthToObject(localVarHeaderParameter, configuration)
 
     
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -894,6 +918,9 @@ export const QuestionsApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['survey_id'] = surveyId;
             }
 
+            // authentication bearerAuth required
+            // http bearer authentication required
+            await setBearerAuthToObject(localVarHeaderParameter, configuration)
 
     
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -928,6 +955,9 @@ export const QuestionsApiAxiosParamCreator = function (configuration?: Configura
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication bearerAuth required
+            // http bearer authentication required
+            await setBearerAuthToObject(localVarHeaderParameter, configuration)
 
     
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -1131,6 +1161,9 @@ export const SurveysApiAxiosParamCreator = function (configuration?: Configurati
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication bearerAuth required
+            // http bearer authentication required
+            await setBearerAuthToObject(localVarHeaderParameter, configuration)
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
@@ -1168,6 +1201,9 @@ export const SurveysApiAxiosParamCreator = function (configuration?: Configurati
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication bearerAuth required
+            // http bearer authentication required
+            await setBearerAuthToObject(localVarHeaderParameter, configuration)
 
     
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -1198,6 +1234,9 @@ export const SurveysApiAxiosParamCreator = function (configuration?: Configurati
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication bearerAuth required
+            // http bearer authentication required
+            await setBearerAuthToObject(localVarHeaderParameter, configuration)
 
     
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -1232,6 +1271,9 @@ export const SurveysApiAxiosParamCreator = function (configuration?: Configurati
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication bearerAuth required
+            // http bearer authentication required
+            await setBearerAuthToObject(localVarHeaderParameter, configuration)
 
     
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -1269,6 +1311,9 @@ export const SurveysApiAxiosParamCreator = function (configuration?: Configurati
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication bearerAuth required
+            // http bearer authentication required
+            await setBearerAuthToObject(localVarHeaderParameter, configuration)
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
@@ -1309,6 +1354,9 @@ export const SurveysApiAxiosParamCreator = function (configuration?: Configurati
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            // authentication bearerAuth required
+            // http bearer authentication required
+            await setBearerAuthToObject(localVarHeaderParameter, configuration)
 
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
